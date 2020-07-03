@@ -1,1 +1,205 @@
-Hello World
+<!-- !DOCTYPE html -->
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="fontawesome-free-5.13.1-web/css/all.css" rel="stylesheet">
+    <style>
+        .navbar-brand {
+            color: #fff;
+            font-weight: 800;
+            font-size: 22px;
+            line-height: 1;
+            margin-bottom: 0px;
+        }
+
+        .navbar-brand {
+            display: inline-block;
+            padding-top: 0.3125rem;
+            padding-bottom: 0.3125rem;
+            margin-right: 1rem;
+            font-size: 1.25rem;
+            line-height: inherit;
+            white-space: nowrap;
+        }
+
+        .wrap {
+            background: #202020;
+            padding: 25px 0;
+        }
+
+        .wrap .top-wrap {
+            font-size: 12px;
+        }
+
+        .wrap .top-wrap .icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            border: 1px solid #f79f24;
+        }
+
+        .wrap .top-wrap .icon span {
+            color: #f79f24;
+        }
+
+        .wrap .top-wrap .text {
+            padding-left: 15px;
+            width: calc(100% - 30px);
+        }
+
+        .wrap .top-wrap .text span:first-child {
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .wrap .top-wrap .text span {
+            display: block;
+        }
+
+        .wrap .top-wrap .text span:last-child {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .social-media {
+            display: inline-block;
+        }
+
+        .social-media p a {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 4px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .social-media p a span {
+            color: white;
+        }
+
+        .ftco-navbar-light {
+            background: #fff !important;
+            z-index: 3;
+            padding: 0;
+        }
+        @media (min-width: 992px){
+            .navbar-expand-lg {
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+                -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                justify-content: flex-start;
+            }
+        }
+        .navbar {
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            padding: 0.5rem 1rem;
+        }
+        .ftco-navbar-light .navbar-toggler {
+            border: none;
+            color: rgba(255, 255, 255, 0.5) !important;
+            cursor: pointer;
+            padding-right: 0;
+            text-transform: uppercase;
+            font-size: 16px;
+            letter-spacing: .1em;
+        }
+        .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+            font-size: 12px;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 23px;
+            padding-right: 23px;
+            font-weight: 500;
+            color: #000000;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            opacity: 1 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-3 d-flex align-items-center">
+                    <a class="navbar-brand" href="index.html">KIRIMAJA.COM</a>
+                </div>
+                <div class="col-md-7">
+                    <div class="row">
+                        <div class="col">
+                            <div class="top-wrap d-flex">
+                                <div class="icon d-flex align-items-center justify-content-center"><span
+                                        class="fa fa-location-arrow"></span></div>
+                                <div class="text"><span>Address</span><span>Jakarta Barat</span></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="top-wrap d-flex">
+                                <div class="icon d-flex align-items-center justify-content-center"><span
+                                        class="fa fa-location-arrow"></span></div>
+                                <div class="text"><span>Call us</span><span>(+62) 0888811188</span></div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-end align-items-center">
+                            <div class="social-media">
+                                <p class="mb-0 d-flex">
+                                    <a href="#" class="d-flex align-items-center justify-content-center"><span
+                                            class="fab fa-facebook"><i class="sr-only">Facebook</i></span></a>
+                                    <a href="#" class="d-flex align-items-center justify-content-center"><span
+                                            class="fab fa-twitter"><i class="sr-only">Twitter</i></span></a>
+                                    <a href="#" class="d-flex align-items-center justify-content-center"><span
+                                            class="fab fa-instagram"><i class="sr-only">Instagram</i></span></a>
+                                    <a href="#" class="d-flex align-items-center justify-content-center"><span
+                                            class="fab fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Selamat Datang</h1>
+            <h2>di Kirimaja.com</h2>
+            <p class="lead">Kami memberikan jasa pengiriman dari dalam dan luar negeri</p>
+        </div>
+    </div>
+</body>
+<script src="js/bootstrap.min.js"></script>
+
+</html>
